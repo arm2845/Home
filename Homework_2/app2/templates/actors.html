@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top actors</title>
+    <style>
+        img{
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+{% load static %}
+<h1>Best actors</h1>
+{% for item in items %}
+    {% if item.married == True %}
+        <h2>{{item.name}} {{item.surname}}</h2>
+    {% endif %}
+{% endfor %}
+
+<a href="https://www.kinopoisk.ru/name/24285/" target="_blank">
+    <figure>
+        <img src="{% static 'natalie.jpg' %}" alt="error">
+         <figcaption>Natalie Portman</figcaption>
+    </figure>
+    <a/>
+<a href="https://www.kinopoisk.ru/name/34549/" target="_blank">
+    <figure>
+       <img src="{% static 'Benedict.jpg' %}" alt="error">
+        <figcaption>Benedict Cumberbatch</figcaption>
+    </figure>
+    <a/>
+<a href="https://www.kinopoisk.ru/name/670494/" target="_blank">
+    <figure>
+        <img src="{% static 'Eddie.jpg' %}" alt="error">
+         <figcaption>Eddie Redmayne</figcaption>
+    </figure>
+    <a/>
+</body>
+</html>
+
+<!--{% for movie in movies %}-->
+<!--    <h3>movie name</h3>-->
+<!--    {{ movie.name }}-->
+<!--    <h3>movie genre</h3>-->
+<!--    {{ movie.genre }}-->
+<!--    <br>-->
+<!--    {% for actor in movie.actors.all %}-->
+<!--        {{ actor.name }}-->
+<!--    <br>-->
+<!--    {% endfor %}-->
+<!--    <br>-->
+<!--    {{ movie.genre }}-->
+<!--{% endfor %}-->

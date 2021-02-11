@@ -1,0 +1,37 @@
+{"items":[
+    {
+        "name":"Natalie",
+        "surname":"Portman",
+        "age":39,
+        "height": 1.6,
+        "married": true,
+        "movies": ["Black Swan","Thor","V for Vendetta","The Other Boleyn Girl"]
+        
+    },
+    {
+        "name":"Scarlett",
+        "surname":"Johansson",
+        "age":35,
+        "height": 1.6,
+        "married": false,
+        "movies": ["Black Widow","Lucy","The Avengers","The Other Boleyn Girl"]        
+    },
+        {
+        "name":"Benedict",
+        "surname":"Cumberbatch",
+        "age":44,
+        "height": 1.83,
+        "married": true,
+        "movies": ["The imitation game","Doctor Strange","The Avengers","1917"]
+    },
+        {
+        "name":"Eddie",
+        "surname":"Redmayne",
+        "age":39,
+        "height": 1.84,
+        "married": true,
+        "movies": ["The theory of everything","The Danish girl","Miserables","The Other Boleyn Girl"]
+    }
+
+]
+}

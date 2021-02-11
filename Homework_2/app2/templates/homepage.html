@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+    <style>
+        .greeting{
+            color: green;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        .about{
+            color: green;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
+            border-radius: 50px;
+            object-fit: cover;
+            float: left;
+        }
+        .go{
+            width: 100px;
+            height: 100px;
+            margin-right: 200px;
+            border-radius: 50px;
+            object-fit: cover;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+{% load static %}
+<img src="{% static 'hello.jfif' %}" alt="error"/>
+<br>
+<p class="greeting">Welcome to our web page !!!</p>
+<p class="about">Here you can find all about your favorite actors and actresses !!!</p>
+<p class= "about">Let's see who are the best actors according to our users. Click to the picture below to go ahead !</p>
+<a href="actors" target="_blank"><img class="go" src="{% static 'go.jpg' %}" alt="error"/></a>
+</body>
+</html>
