@@ -14,7 +14,7 @@ def home(request):
 
 
 def actors(request):
-    path = "C:/Users/User/Desktop/python_enviroments/my_env/Homework-2/Homework_2/app2/static/sample.json"
+    path = "C:/Users/User/Desktop/python_enviroments/my_env/Home/Homework_2/app2/static/sample.json"
     with open(path, 'r') as json_file:
         data = json.load(json_file)
     return render(request, 'actors.html', data)
