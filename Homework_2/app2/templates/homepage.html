@@ -33,6 +33,7 @@
     </style>
 </head>
 <body>
+<h1>Hello {{request.user}}</h1>
 {% load static %}
 <img src="{% static 'hello.jfif' %}" alt="error"/>
 <br>
@@ -40,5 +41,11 @@
 <p class="about">Here you can find all about your favorite actors and actresses !!!</p>
 <p class= "about">Let's see who are the best actors according to our users. Click to the picture below to go ahead !</p>
 <a href="actors" target="_blank"><img class="go" src="{% static 'go.jpg' %}" alt="error"/></a>
+<blockquote>
+    <a href="users/login"><button type="submit">Log In</button></a>
+</blockquote>
+<blockquote>
+    <a href="users/logout"><button type="submit">Log Out</button></a>
+</blockquote>
 </body>
 </html>
