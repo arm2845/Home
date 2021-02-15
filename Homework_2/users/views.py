@@ -1,9 +1,7 @@
 from django.shortcuts import render, redirect
 from . forms import UserRegistrationForm
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.http import HttpResponse
+from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
-from django.contrib import messages
 
 
 def create_user(request):
