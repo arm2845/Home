@@ -37,4 +37,7 @@ def log_in(request):
                 return redirect('HomePage')
 
     form = AuthenticationForm()
-    return render(request, "users/login.html", {"form": form})
+    return render(request, "users/login1.html", {"form": form})
+
+def users_home(request):
+    return render(request, "users/home.html")
